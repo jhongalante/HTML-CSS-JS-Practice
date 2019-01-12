@@ -1,26 +1,25 @@
-@media only screen and (max-width: 768px){
-    .formPesquisa{
-        width: 400px;
-    }
-    .maisAcessados{
-        width: 400px;
-        padding-left: 70px; 
-    }
-    .botoesFooter div{
-        display:block;
-        margin-top: 20px;
-    }
-    
+@media only screen and (max-width: 768px) {
+  .formPesquisa {
+    width: 400px;
+  }
+  .maisAcessados {
+    width: 400px;
+    padding-left: 70px;
+  }
+  .botoesFooter div {
+    display: block;
+    margin-top: 20px;
+  }
 }
-@media only screen and (max-width: 600px){
-    .formPesquisa{
-        width: 300px;
-    }
-    .maisAcessados{
-        width: 300px;
-    }
-    .botoesFooter div{
-        display:block;
-        margin-top: 20px;
-    }
+@media only screen and (max-width: 600px) {
+  .formPesquisa {
+    width: 300px;
+  }
+  .maisAcessados {
+    width: 300px;
+  }
+  .botoesFooter div {
+    display: block;
+    margin-top: 20px;
+  }
 }
