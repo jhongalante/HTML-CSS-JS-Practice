@@ -6,36 +6,36 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
-.listaMenu {
+.lista-menu {
   display: flex;
   flex-direction: row;
   list-style: none;
   margin-top: 10px;
 }
-.listaMenu > li {
+.lista-menu > li {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.listaMenu > li > a {
+.lista-menu > li > a {
   margin-right: 15px;
   text-decoration: none;
   color: black;
 }
-.listaMenu > li > a:hover {
+.lista-menu > li > a:hover {
   color: gray;
   text-decoration: underline;
 }
-.menuIcon > i:hover {
+.menu-icon > i:hover {
   color: black;
   cursor: pointer;
 }
-.menuIcon > i {
+.menu-icon > i {
   color: gray;
   margin-right: 15px;
 }
-.modalMenuApps {
+.modal-menu-apps {
   width: 320px;
   background: #fff;
   position: absolute;
@@ -46,7 +46,7 @@ nav {
   border-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-.modalMenuApps > ul {
+.modal-menu-apps > ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -54,7 +54,7 @@ nav {
   justify-content: flex-start;
   padding: 20px;
 }
-.modalMenuApps > ul > li {
+.modal-menu-apps > ul > li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,15 +62,15 @@ nav {
   padding: 0px 10px 0px 10px;
   flex-basis: 70px;
 }
-.modalMenuApps > ul > li:hover {
+.modal-menu-apps > ul > li:hover {
   border: 1px solid lightgray;
   border-radius: 3px;
 }
-.modalMenuApps > ul > li > img {
+.modal-menu-apps > ul > li > img {
   height: 60px;
   width: 60px;
 }
-.modalMenuApps > div {
+.modal-menu-apps > div {
   width: 100%;
   background: rgba(0, 0, 0, 0.03);
   display: flex;
@@ -78,7 +78,7 @@ nav {
   padding: 10px;
   box-sizing: border-box;
 }
-.modalMenuApps > div > a {
+.modal-menu-apps > div > a {
   text-decoration: none;
   color: black;
   width: 100%;
@@ -96,13 +96,13 @@ nav {
   align-items: center;
   margin-right: 15px;
 }
-.imgPerfil {
+.img-perfil {
   height: 35px;
   width: 35px;
   border-radius: 50%;
   margin-right: 15px;
 }
-.imgPerfil:hover {
+.img-perfil:hover {
   cursor: pointer;
 }
 .sino:hover {
@@ -123,21 +123,21 @@ nav {
   align-items: center;
   margin-top: 100px;
 }
-.formPesquisa {
+.form-pesquisa {
   width: 550px;
   margin-top: 20px;
   border-radius: 50px;
   background: rgba(0, 0, 0, 0.05);
   display: flex;
 }
-.formPesquisa:hover {
+.form-pesquisa:hover {
   background: rgba(0, 0, 0, 0.1);
 }
-.formPesquisa > span > img {
+.form-pesquisa > span > img {
   height: 20px;
   width: 20px;
 }
-.formPesquisa > span {
+.form-pesquisa > span {
   background: transparent;
   display: flex;
   align-items: center;
@@ -145,10 +145,10 @@ nav {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 }
-.formPesquisa > span:hover {
+.form-pesquisa > span:hover {
   cursor: pointer;
 }
-.campoPesquisa {
+.campo-pesquisa {
   background: transparent;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -158,13 +158,13 @@ nav {
   padding-left: 20px;
   display: inline-block;
 }
-.campoPesquisa:focus {
+.campo-pesquisa:focus {
   outline: 0;
 }
-.campoPesquisa:focus::placeholder {
+.campo-pesquisa:focus::placeholder {
   color: transparent;
 }
-.maisAcessados {
+.mais-acessados {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -172,7 +172,7 @@ nav {
   margin-top: 35px;
   padding-left: 35px;
 }
-.maisAcessados > div {
+.mais-acessados > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,11 +180,11 @@ nav {
   padding: 10px;
   margin-bottom: 20px;
 }
-.maisAcessados > div:hover {
+.mais-acessados > div:hover {
   background: rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.maisAcessados > div > div {
+.mais-acessados > div > div {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   height: 50px;
@@ -194,11 +194,11 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.maisAcessados > div > div > img {
+.mais-acessados > div > div > img {
   height: 25px;
   width: 25px;
 }
-.maisAcessados > div > p {
+.maiscessados > div > p {
   width: 80px;
   overflow: hidden;
   white-space: nowrap;
@@ -219,7 +219,7 @@ footer > img {
   height: 15px;
   width: 15px;
 }
-#modalNotificacoes {
+#modal-notificacoes {
   width: 350px;
   display: none;
   position: absolute;
@@ -231,23 +231,23 @@ footer > img {
   position: absolute;
   background: #eee;
 }
-#modalNotificacoes > .cabecalho {
+#modal-notificacoes > .cabecalho {
   width: 100%;
 }
-#modalNotificacoes > .cabecalho > img {
+#modal-notificacoes > .cabecalho > img {
   position: absolute;
   top: 15px;
   left: 15px;
   height: 23px;
   width: 23px;
 }
-#modalNotificacoes > .cabecalho > h2 {
+#modal-notificacoes > .cabecalho > h2 {
   text-align: center;
   margin-top: 15px;
   margin-left: 10px;
   color: rgba(0, 0, 0, 0.2);
 }
-#modalNotificacoes > .corpo {
+#modal-notificacoes > .corpo {
   min-height: 300px;
   display: flex;
   justify-content: center;
@@ -278,7 +278,7 @@ footer > img {
   width: 25px;
   margin-left: 10px;
 }
-#modalUsuario {
+#modal-usuario {
   width: 380px;
   background: #fff;
   position: absolute;
@@ -289,25 +289,25 @@ footer > img {
   border-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-#corpoModal {
+#corpo-modal {
   display: flex;
 }
-.areaFoto {
+.area-foto {
   margin: 20px;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
 }
-.areaFoto:hover {
+.area-foto:hover {
   cursor: pointer;
 }
-.imgPerfilModal {
+.img-perfil-modal {
   background: url("https://lh3.googleusercontent.com/-R8YP-cDhsTE/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcZUs3_RqFV5zXIFaDtr9ppTiPQalg/s96-c-mo/photo.jpg");
   height: 96px;
   width: 96px;
   position: relative;
 }
-.optAlterar {
+.opt-alterar {
   position: absolute;
   bottom: 0;
   left: 0px;
@@ -320,7 +320,7 @@ footer > img {
   background: rgba(0, 0, 0, 0.54);
   width: 96px;
 }
-#userData {
+#user-data {
   padding: 15px 20px 20px 0px;
   display: flex;
   flex-direction: column;
@@ -337,7 +337,7 @@ footer > img {
 .privacidade > a:hover {
   text-decoration: underline;
 }
-.btnContaGoogle {
+.btn-conta-google {
   padding: 5px 0px 5px 15px;
   width: 115px;
   background-color: #4d90fe;
@@ -348,19 +348,19 @@ footer > img {
   border: 1px solid #c6c6c6;
   border-radius: 2px;
 }
-.btnContaGoogle:hover {
+.btn-conta-google:hover {
   background-color: #357ae8;
   cursor: default;
 }
 
-#footerModal {
+#footer-modal {
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px 10px 20px;
   background-color: #f5f5f5;
 }
-#footerModal > a {
+#footer-modal > a {
   padding: 7px 12px;
   border: 1px solid #c6c6c6;
   border-radius: 2px;
@@ -369,13 +369,13 @@ footer > img {
   background-color: #f8f8f8;
   font-size: 14px;
 }
-#footerModal > a:hover {
+#footer-modal > a:hover {
   background-color: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
-#modalAddAtalho {
+#modal-add-atalho {
   width: 320px;
   background: #fff;
   border: 1px solid #ccc;
@@ -389,20 +389,20 @@ footer > img {
   transform: translate(-50%, -50%);
 }
 
-.corpoModal > form {
+.corpo-modal > form {
   display: flex;
   flex-direction: column;
   padding: 0px 20px 20px 20px;
 }
 
-.corpoModal > .titulo {
+.corpo-modal > .titulo {
   padding: 20px 20px;
 }
 
-.formAtalho > label {
+.form-atalho > label {
   font-size: 10px;
 }
-.formAtalho > input {
+.form-atalho > input {
   height: 30px;
   margin-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.03);
@@ -410,34 +410,34 @@ footer > img {
   border-radius: 3px;
 }
 
-.footerBtns {
+.footer-btns {
   padding: 0px 20px 20px 20px;
   font-size: 13px;
   font-weight: bold;
 }
 
-.footerBtns > a,
-.footerBtns > div > a {
+.footer-btns > a,
+.footer-btns > div > a {
   padding: 10px;
   text-decoration: none;
   border-radius: 5px;
 }
 
-#btnRemover {
+#btn-remover {
   border: 1px solid rgba(0, 0, 0, 0.05);
   color: gray;
 }
 
-#btnCancelar {
+#btn-cancelar {
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: #4d90fe;
 }
 
-#btnCancelar:hover {
+#btn-cancelar:hover {
   background: rgba(77, 144, 254, 0.02);
 }
 
-#btnConcluido {
+#btn-concluido {
   border: none;
   background: rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.5);
@@ -445,7 +445,7 @@ footer > img {
   transition: all 0.2s ease-in-out;
 }
 
-#modalPersonalizarPagina {
+#modal-personalizar-pagina {
   width: 320px;
   background: #fff;
   border: 1px solid #ccc;
@@ -459,16 +459,16 @@ footer > img {
   padding: 10px;
 }
 
-#modalPersonalizarPagina > .titulo {
+#modal-personalizar-pagina > .titulo {
   margin: 10px 0px 20px 10px;
   font-size: 17px;
 }
 
-#restaurarPadrao {
+#restaurar-padrao {
   display: flex;
 }
 
-#modalSelectPhoto {
+#modal-select-photo {
   width: 70%;
   border: 1px solid #ccc;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -480,35 +480,35 @@ footer > img {
   display: none;
 }
 
-.headerModalSelectPhoto {
+.header-modal-select-photo {
   border-bottom: 1px solid #ccc;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   padding: 20px 20px 0px 20px;
   background: inherit;
 }
 
-.tituloModalSelectPhoto {
+.titulo-modal-select-photo {
   width: 100%;
   margin-bottom: 20px;
 }
 
-.tituloModalSelectPhoto > i {
+.titulo-modal-select-photo > i {
   float: right;
   color: rgba(0, 0, 0, 0.4);
 }
 
-.tituloModalSelectPhoto > i:hover {
+.titulo-modal-select-photo > i:hover {
   cursor: pointer;
 }
 
-.tituloModalSelectPhoto h3 {
+.titulo-modal-select-photo h3 {
   font-weight: 500;
   position: relative;
   left: 0px;
   display: inline-block;
 }
 
-.headerModalSelectPhoto button {
+.header-modal-select-photo button {
   border: none;
   background: inherit;
   padding: 20px 5px;
@@ -516,52 +516,52 @@ footer > img {
   font-size: 14px;
 }
 
-.headerModalSelectPhoto button:hover {
+.header-modal-select-photo button:hover {
   border-bottom: 2px solid blue;
   cursor: pointer;
 }
 
-.tabBody {
+.tab-body {
   display: none;
   height: 400px;
 }
 
-#tabBody1 {
+#tab-body1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#btnUpload {
+#btn-upload {
   border-bottom: 2px solid blue;
   font-weight: bold;
 }
 
-#tabBody1 > div {
+#tab-body1 > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 40px 0px;
 }
 
-#tabBody1 img {
+#tab-body1 img {
   height: 100px;
   width: 100px;
   margin-bottom: 20px;
 }
 
-#tabBody1 > div h1,
-#tabBody1 > div p {
+#tab-body1 > div h1,
+#tab-body1 > div p {
   color: rgba(0, 0, 0, 0.4);
   margin-bottom: 20px;
   padding: 0px 20px;
 }
 
-#tabBody1 p {
+#tab-body1 p {
   font-weight: bold;
 }
 
-#tabBody1 button {
+#tab-body1 button {
   padding: 7px;
   font-weight: bold;
   font-size: 12px;
@@ -569,30 +569,30 @@ footer > img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#tabBody2 {
+#tab-body2 {
   display: none;
   flex-direction: column;
 }
-.campoBusca {
+.campo-busca {
   position: relative;
   left: 20px;
   top: 20px;
 }
-.campoBusca input {
+.campo-busca input {
   width: 50%;
   height: 25px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin-right: 15px;
 }
 
-.campoBusca button {
+.campo-busca button {
   padding: 5px 15px;
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
 }
 
-.pastaFoto {
+.pasta-foto {
   width: 170px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -601,28 +601,28 @@ footer > img {
   left: 20px;
 }
 
-.pastaFoto:hover {
+.pasta-foto:hover {
   cursor: pointer;
 }
 
-.pastaFoto div {
+.pasta-foto div {
   padding: 5px 0px 30px 10px;
   font-size: 12px;
   font-weight: bold;
 }
 
-.pastaFoto img {
+.pasta-foto img {
   height: 120px;
   width: 100%;
 }
 
-#tabBody2-1 {
+#tab-body2-1 {
   display: none;
   position: relative;
   overflow-y: scroll;
 }
 
-.navegacaoGaleria {
+.navegacao-galeria {
   position: absolute;
   left: 10px;
   right: 0px;
@@ -631,48 +631,48 @@ footer > img {
   margin-bottom: 40px;
 }
 
-#navegacaoVoltar:hover {
+#navegacao-voltar:hover {
   cursor: pointer;
 }
-.navegacaoGaleria p:last-child,
-.navegacaoGaleria span {
+.navegacao-galeria p:last-child,
+.navegacao-galeria span {
   font-weight: bold;
 }
 
-.navegacaoGaleria p,
-.navegacaoGaleria span {
+.navegacao-galeria p,
+.navegacao-galeria span {
   margin-right: 10px;
   display: inline-block;
 }
 
-.corpoGaleria {
+.corpo-galeria {
   margin-left: 15px;
 }
 
-.corpoGaleria div > div > p {
+.corpo-galeria div > div > p {
   display: inline-block;
   margin-top: 30px;
 }
 
-.dataGaleria p:first-child {
+.data-galeria p:first-child {
   font-weight: 600;
 }
 
-.dataGaleria p:last-child {
+.data-galeria p:last-child {
   font-size: 13px;
   margin-left: 10px;
 }
 
-.albumFotosData > div {
+.album-fotos-data > div {
   width: 190px;
   margin: 5px;
   position: relative;
 }
-.albumFotosData div img {
+.album-fotos-data div img {
   width: 100%;
   height: 100%;
 }
-.albumFotosData div span {
+.album-fotos-data div span {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -681,36 +681,36 @@ footer > img {
   background: rgba(0, 0, 0, 0.6);
   display: none;
 }
-.albumFotosData div:hover span {
+.album-fotos-data div:hover span {
   display: block;
 }
-.albumFotosData div span i {
+.album-fotos-data div span i {
   color: #ccc;
   cursor: pointer;
   padding: 0px 10px 5px 5px;
 }
 
-.albumFotosData div span div {
+.album-fotos-data div span div {
   float: right;
 }
-.albumFotosData {
+.album-fotos-data {
   display: flex;
   flex-wrap: wrap;
 }
 
-#tabBody3 {
+#tab-body3 {
   display: none;
   justify-content: center;
   align-items: center;
   color: rgba(0, 0, 0, 0.7);
 }
-.footerModalSelectPhoto {
+.footer-modal-select-photo {
   border-top: 1px solid #ccc;
   padding: 30px;
   background: inherit;
 }
 
-.botoesFooter a {
+.botoes-footer a {
   padding: 8px;
   text-decoration: none;
   font-weight: bold;
@@ -718,22 +718,22 @@ footer > img {
   border-radius: 3px;
 }
 
-.botoesFooter div {
+.botoes-footer div {
   display: inline-block;
   margin-left: 30px;
   font-size: 13px;
   color: #ccc;
 }
 
-.botoesFooter div p a {
+.botoes-footer div p a {
   color: blue;
 }
 
-.botoesFooter div p a:hover {
+.botoes-footer div p a:hover {
   text-decoration: underline;
 }
 
-.btnDefinirFoto {
+.btn-definir-foto {
   background: #4d90fe;
   opacity: 0.5;
   border: 1px solid #3079ed;
@@ -742,16 +742,16 @@ footer > img {
   cursor: default;
 }
 
-.btnCancelarDefinirFoto {
+.btn-cancelar-definir-foto {
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.8);
 }
-.btnCancelarDefinirFoto:hover {
+.btn-cancelar-definir-foto:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-#paginaDeVoz {
+#pagina-de-voz {
   display: none;
   position: absolute;
   top: 0px;
@@ -762,27 +762,27 @@ footer > img {
   height: 100vh;
 }
 
-#paginaDeVoz > div {
+#pagina-de-voz > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#paginaDeVoz > div > h1 {
+#pagina-de-voz > div > h1 {
   display: flex;
   align-items: center;
 
   color: rgba(0, 0, 0, 0.6);
 }
 
-#btnFecharPaginaVoz {
+#btn-fechar-pagina-voz {
   position: absolute;
   right: 20px;
   top: 20px;
   color: rgba(0, 0, 0, 0.3);
 }
 
-#btnFecharPaginaVoz:hover {
+#btn-fechar-pagina-voz:hover {
   cursor: pointer;
 }
 
