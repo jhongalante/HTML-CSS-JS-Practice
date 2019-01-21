@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-devide-width, initial-scale=1, shrink-to-fit=no">
-        <title>Jhonata Galante's Twitter Profile</title>
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <link rel="stylesheet" href="CSS/menuNavegacao.css">
-        <link rel="stylesheet" href="CSS/menuHeader.css">
-        <link rel="stylesheet" href="CSS/main.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-devide-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jhonata Galante's Twitter Profile</title>
 
-        <style>
-            *{
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/menuNavegacao.css">
+    <link rel="stylesheet" href="CSS/menuHeader.css">
+    <link rel="stylesheet" href="CSS/main.css">
+
+    <style>
+        *{
                 padding: 0;
                 margin: 0;
             }
             .aside{
-                background: #fff;
                 width: 300px;
+                margin-right: 20px;
+                position:absolute;
+                right: 0px;
+                display: inline-block;
+            }
+
+            .aside1{
+                margin-bottom: 7px;
+                background: #fff;
+            }
+
+            .aside2{
+                background: #fff;
             }
             .cabecalho{
                 display:flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
-            }
-
-            .cabecalho > h3{
-                padding: 10px 0px 10px 10px;
+                padding: 15px 0px 15px 15px;
             }
 
             .cabecalho > a{
-                padding: 15px 0px 0px 7px;
+                margin-left: 10px;
+                margin-top: 5px;
                 font-size: 13px;
                 color:#E81C4F;
                 text-decoration: none;
@@ -42,216 +54,400 @@
 
             .perfil{
                 display:flex;
-                border:1px solid black;
+                margin-bottom: 10px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid rgba(0,0,0,.1);
             }
 
-            .perfil > div > img{
+            .container-foto-perfil > img{
                 height: 50px;
                 width: 50px;
                 border-radius: 50%;
             }
 
-            .userNameProfile{
-                display:flex;
-                border:1px solid blue;
+            .container-foto-perfil{
+                margin-left: 10px;
             }
 
+            .container-profile{
+                margin-left: 10px;
+                margin-top: 2px;
+                width:100%;
+                position: relative;
+            }
+
+            .userNameProfile{
+                display:flex;
+                width:100%;
+            }
+
+            .userNameProfile > p{
+                color: rgba(0,0,0,0.4);
+                margin-left: 5px;
+            }
+
+            .userNameProfile > .btn-dismiss-profile{
+                position:absolute;
+                right: 10px;
+                margin-bottom: 5px;
+                color: rgba(0,0,0,0.2);
+            }
+
+            .userNameProfile > .btn-dismiss-profile:hover{
+                cursor:pointer;
+            }
             .btnSeguir{
                 border:1px solid #EC4972;
                 border-radius: 20px;
                 text-decoration: none;
                 color: #E81C4F;
-                padding: 3px 15px;
-                margin-top: 20px;
+                padding: 8px 25px 5px 25px;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            .container-btn-seguir{
+                margin-top: 10px;
+            }
+
+
+
+            .container-import-gmail{
+                display:flex;
+                flex-direction: column;
+                border-bottom: 1px solid rgba(0,0,0,.1);
+                padding-bottom: 10px;
+                margin: 15px;
+            }
+
+            .container-import-gmail > div{
+                margin-left: 10px;
+            }
+            
+            .container-import-gmail > div > small{
+                color: gray;
+            }
+
+            .container-import-gmail > img{
+                height: 25px;
+                width: 25px;
+                border:1px solid rgba(0,0,0,.2);
+                padding: 5px;
+                margin-left: 5px;
+            }
+
+            .container-conect-other-contacts{
+                padding-bottom: 15px;
+                margin: 15px;
+            }
+
+            .container-conect-other-contacts > a{
+                margin-left: 5px;
+                text-decoration: none;
+                color: #E81C4F;
+                font-size: 14px;
+            }
+
+            .container-conect-other-contacts > a:hover{
+                text-decoration: underline;
+            }
+
+            .aside2 > .cabecalho{
+                padding-bottom: 10px;
+            }
+
+            .container-hashtags{
+                display:flex;
+                flex-direction: column;
+                margin-left: 15px;
+                padding-bottom: 10px;
+            }
+
+            .container-hashtags div{
+                margin-bottom: 10px;
+            }
+
+            .container-hashtags div h4 a{
+                text-decoration: none;
+                color: #E81C4F;
+                font-size: 16px; 
+            }
+
+            .container-hashtags div p{
+                color: gray;
+                font-size: 13.5px;
+            }
+
+            .aside > footer{
+                margin: 20px 0px;
+            }
+            .aside > footer div{
+               margin-left: 15px;
+               font-size: 14px;
+            }
+            .aside > footer div p{
+                display:inline;
+                color: gray;
+                margin-right: 10px;
+            }
+            .aside > footer div a{
+                text-decoration: none;
+                color: gray;
+                margin-right: 15px;
+            }
+
+            .aside > footer div a:hover{
+                color: #E81C4F;
+                text-decoration: underline;
             }
 
         </style>
-    </head>
-    <body>
-        <nav>
-            <ul class="menuNavegacao">
-                <li><a href="" class="itensMenu"><i class="fas fa-home iconeMenu"></i>Página Inicial</a></li>
-                <li><a href="" class="itensMenu"><i class="fas fa-bolt iconeMenu"></i>Moments</a></li>
-                <li><a href="" class="itensMenu"><i class="fas fa-bell iconeMenu"></i>Notificações</a></li>
-                <li><a href="" class="itensMenu"><i class="fas fa-envelope iconeMenu"></i>Mensangens</a></li>
-                <i class="fab fa-twitter iconTwitter"></i>
-            </ul>
+</head>
 
-            <div class="menuTopoLateralDireito">
-                <input type="search" placeholder="Buscar no Twitter" id="campoBuscarTwitter">
-                <img src="Imagens/fotoPerfil.jpg" class="miniFotoPerfil"> <!--Mini imagem de perfil-->
-                <a href="" id="btnTweetar">Tweetar</a>
+<body>
+    <nav>
+        <ul class="menuNavegacao">
+            <li><a href="" class="itensMenu"><i class="fas fa-home iconeMenu"></i>Página Inicial</a></li>
+            <li><a href="" class="itensMenu"><i class="fas fa-bolt iconeMenu"></i>Moments</a></li>
+            <li><a href="" class="itensMenu"><i class="fas fa-bell iconeMenu"></i>Notificações</a></li>
+            <li><a href="" class="itensMenu"><i class="fas fa-envelope iconeMenu"></i>Mensangens</a></li>
+            <i class="fab fa-twitter iconTwitter"></i>
+        </ul>
+
+        <div class="menuTopoLateralDireito">
+            <input type="search" placeholder="Buscar no Twitter" id="campoBuscarTwitter">
+            <img src="Imagens/fotoPerfil.jpg" class="miniFotoPerfil">
+            <!--Mini imagem de perfil-->
+            <a href="" id="btnTweetar">Tweetar</a>
+        </div>
+    </nav>
+    <div class="conteudoDaPagina">
+        <header>
+            <div class="containerImgCapa">
+                <img src="Imagens/fotoCapa.jpg" class="imgCapa">
+                <!--Imagem de capa-->
             </div>
-        </nav>
-        <div class="conteudoDaPagina">
-            <header>
-                <div class="containerImgCapa">
-                    <img src="Imagens/fotoCapa.jpg" class="imgCapa"> <!--Imagem de capa-->
+
+            <div class="barraHeader">
+                <img src="Imagens/fotoPerfil.jpg" class="fotoPerfil">
+                <!--Imagem de Perfil-->
+                <div class="menuHeader">
+                    <ul class="listaMenu">
+                        <li class="itemMenuHeader"><a href=""><span>Tweets</span><span class="contador">171</span></a></li>
+                        <li class="itemMenuHeader"><a href=""><span>Seguindo</span><span class="contador">360</span>
+                        </li>
+                        <li class="itemMenuHeader"><a href=""><span>Seguidores</span><span class="contador">17</span></li>
+                        <li class="itemMenuHeader"><a href=""><span>Curtidas</span><span class="contador">314</span></li>
+                        <li class="itemMenuHeader"><a href=""><span>Listas</span><span class="contador">0</span></li>
+                        <li class="itemMenuHeader"><a href=""><span>Moments</span><span class="contador">0</span></a></li>
+                    </ul>
+                    <a href="" class="btnEditarPerfil">Editar Perfil</a>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="card">
+                <!--Cartão do usuario-->
+                <div class="username">
+                    <h1>Jhonata Galante</h1>
+                    <small>@jhongalante</small>
+                </div>
+                <div>
+                    <p><i class="far fa-calendar-alt"></i>Participa desde agosto de 2015</p>
+                    <p><i class="fas fa-birthday-cake"></i>Nasceu em 1 de outubro de 1996</p>
+                </div>
+                <div class='usergallery'>
+                    <a href=""><i class="far fa-image"></i>Fotos e vídeos</a>
+                    <img src="Imagens/fotoGaleria1.jpg">
+                    <!--Imagem midia usuario 1-->
+                    <img src="Imagens/fotoGaleria2.jpg">
+                    <!--Imagem midia usuario 2-->
+                </div>
+            </div>
+
+            <div class="main">
+                <!--Div central com tabs e tweets-->
+                <div class="menuMain">
+                    <!--Tabs de tweets-->
+                    <ul class="listaMenuMain">
+                        <li><a href="">Tweets</a></li>
+                        <li><a href="">Tweets e respostas</a></li>
+                        <li><a href="">Mídia</a></li>
+                    </ul>
                 </div>
 
-                <div class="barraHeader">
-                    <img src="Imagens/fotoPerfil.jpg" class="fotoPerfil"> <!--Imagem de Perfil-->
-                    <div class="menuHeader">
-                        <ul class="listaMenu">
-                            <li class="itemMenuHeader"><a href=""><span>Tweets</span><span class="contador">171</span></a></li>
-                            <li class="itemMenuHeader"><a href=""><span>Seguindo</span><span class="contador">360</span>
-                            </li>
-                            <li class="itemMenuHeader"><a href=""><span>Seguidores</span><span class="contador">17</span></li>
-                            <li class="itemMenuHeader"><a href=""><span>Curtidas</span><span class="contador">314</span></li>
-                            <li class="itemMenuHeader"><a href=""><span>Listas</span><span class="contador">0</span></li>
-                            <li class="itemMenuHeader"><a href=""><span>Moments</span><span class="contador">0</span></a></li>
-                        </ul>
-                        <a href="" class="btnEditarPerfil">Editar Perfil</a>
+                <div class="tweet">
+                    <!--Tweet-->
+                    <div class="contextTweet">
+                        <small><i class="fas fa-retweet"></i>Você retweetou</small>
+                    </div>
+
+                    <div class="tweetBody">
+                        <div class="userInfo">
+                            <!--Informações do usuário do tweet-->
+                            <a href=#>
+                                <img src="Imagens/fotoPerfil.jpg">
+                                <!--Imagem de perfil do usuario 1-->
+                            </a>
+                            <div class="datauser">
+                                <p class="name">usuario1</p>
+                                <p class="username">@usuario1</p>
+                                <p class="dataTweet">19 de dez</p>
+                            </div>
+                        </div>
+                        <div class="tweetContent">
+                            <!--Conteúdo do tweet-->
+                            <p class="tweetText">Tweet 1 Laram Ipsum</p>
+                            <div class="tweetLink">
+                                <img sr="">
+                                <!--Imagem do link do tweet-->
+                                <div>
+                                    <h4>Titulo do link tweetado</h4>
+                                    <p>Breve resumo do corpo do link do tweet</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menuTweet">
+                            <ul class="listMenuTweet">
+                                <!--Menu de tweet-->
+                                <li>3</li>
+                                <!--Responder-->
+                                <li>4</li>
+                                <!--Retweets-->
+                                <li>34</li>
+                                <!--Likes-->
+                                <li></li>
+                                <!--DM-->
+                            </ul>
+                            <a href="">Mostrar esta sequência</a>
+                        </div>
                     </div>
                 </div>
-            </header>
+            </div>
 
-            <section>
-                <div class="card"> <!--Cartão do usuario-->
-                    <div class="username">
-                        <h1>Jhonata Galante</h1>
-                        <small>@jhongalante</small>
+            <div class="aside">
+                <!--Div do lado direito-->
+                <div class="aside1">
+                    <!--Quem seguir-->
+                    <div class="cabecalho">
+                        <!--Cabeçalho-->
+                        <h3>Quem seguir</h3>
+                        <a href="">Atualizar</a>
+                        <a href="">Ver todos</a>
                     </div>
                     <div>
-                        <p><i class="far fa-calendar-alt"></i>Participa desde agosto de 2015</p>
-                        <p><i class="fas fa-birthday-cake"></i>Nasceu em 1 de outubro de 1996</p>
-                    </div>
-                    <div class='usergallery'>
-                        <a href=""><i class="far fa-image"></i>Fotos e vídeos</a>
-                        <img src="Imagens/fotoGaleria1.jpg"> <!--Imagem midia usuario 1-->
-                        <img src="Imagens/fotoGaleria2.jpg"> <!--Imagem midia usuario 2-->
-                    </div>
-                </div>
-
-                <div class="main"> <!--Div central com tabs e tweets-->
-                    <div class="menuMain"> <!--Tabs de tweets-->
-                        <ul class="listaMenuMain">
-                            <li><a href="">Tweets</a></li>
-                            <li><a href="">Tweets e respostas</a></li>
-                            <li><a href="">Mídia</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="tweet"> <!--Tweet-->
-                        <div class="contextTweet">
-                            <small><i class="fas fa-retweet"></i>Você retweetou</small>
-                        </div>
-
-                        <div class="tweetBody">
-                            <div class="userInfo"> <!--Informações do usuário do tweet-->
-                                <a href=#>
-                                    <img src="Imagens/fotoPerfil.jpg"> <!--Imagem de perfil do usuario 1-->
-                                </a>
-                                <div class="datauser">
-                                    <p class="name">usuario1</p>
-                                    <p class="username">@usuario1</p>
-                                    <p class="dataTweet">19 de dez</p>
-                                </div>
+                        <!--Perfis-->
+                        <div class="perfil">
+                            <!--Perfil 1-->
+                            <div class="container-foto-perfil">
+                                <img src="Imagens/fotoPerfil.jpg">
                             </div>
-                            <div class="tweetContent"> <!--Conteúdo do tweet-->
-                                <p class="tweetText">Tweet 1 Laram Ipsum</p>
-                                <div class="tweetLink">
-                                    <img sr=""> <!--Imagem do link do tweet-->
-                                    <div>
-                                        <h4>Titulo do link tweetado</h4>
-                                        <p>Breve resumo do corpo do link do tweet</p>
-                                    </div>
+                            <div class='container-profile'>
+                                <div class="userNameProfile">
+                                    <h4>Usuario A</h4>
+                                    <p>@usuarioA</p>
+                                    <p class="btn-dismiss-profile">x</p>
                                 </div>
-                            </div>
-
-                            <div class="menuTweet">
-                                <ul class="listMenuTweet"> <!--Menu de tweet-->
-                                    <li>3</li> <!--Responder-->
-                                    <li>4</li> <!--Retweets-->
-                                    <li>34</li> <!--Likes-->
-                                    <li></li> <!--DM-->
-                                </ul>
-                                <a href="">Mostrar esta sequência</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="aside"> <!--Div do lado direito-->
-                    <div class="aside1"> <!--Quem seguir-->
-                        <div class="cabecalho"> <!--Cabeçalho-->
-                            <h3>Quem seguir</h3>
-                            <a href="">Atualizar</a>
-                            <a href="">Ver todos</a>
-                        </div>
-                        <div> <!--Perfis-->
-                            <div class="perfil"> <!--Perfil 1-->
-                                <div>
-                                    <img src="Imagens/fotoPerfil.jpg">
-                                </div>
-                                <div style="border:1px solid yellow;">
-                                    <div class="userNameProfile">
-                                        <h4>Usuario A</h4>
-                                        <small>@usuarioA</small>
-                                    </div>
+                                <div class="container-btn-seguir">
                                     <a href="" class="btnSeguir">Seguir</a>
                                 </div>
                             </div>
-                            <div> <!--Perfil 2-->
-                                <img src="">
-                                <h4>Usuario B</h4>
-                                <small>@usuarioB</small>
-                                <button>Seguir</button>
+                        </div>
+                        <div class="perfil">
+                            <!--Perfil 2-->
+                            <div class="container-foto-perfil">
+                                <img src="Imagens/fotoPerfil.jpg">
                             </div>
-                            <div> <!--Perfil 3-->
-                                <img src="">
-                                <h4>Usuario C</h4>
-                                <small>@usuarioC</small>
-                                <button>Seguir</button>
+                            <div class='container-profile'>
+                                <div class="userNameProfile">
+                                    <h4>Usuario B</h4>
+                                    <p>@usuarioB</p>
+                                    <p class="btn-dismiss-profile">x</p>
+                                </div>
+                                <div class="container-btn-seguir">
+                                    <a href="" class="btnSeguir">Seguir</a>
+                                </div>
                             </div>
+                        </div>
+                        <div class="perfil">
+                            <!--Perfil 3-->
+                            <div class="container-foto-perfil">
+                                <img src="Imagens/fotoPerfil.jpg">
+                            </div>
+                            <div class='container-profile'>
+                                <div class="userNameProfile">
+                                    <h4>Usuario C</h4>
+                                    <p>@usuarioC</p>
+                                    <p class="btn-dismiss-profile">x</p>
+                                </div>
+                                <div class="container-btn-seguir">
+                                    <a href="" class="btnSeguir">Seguir</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <div> <!--Importas contatos do gmail-->
-                                <img src="">
+                        <div class="container-import-gmail">
+                            <!--Importas contatos do gmail-->
+                            <img src="Imagens/icon-gmail.png">
+                            <div>
                                 <h4>Encontre pessoas que você conhece</h4>
                                 <small>Importe seus contatos do Gmail</small>
                             </div>
+                        </div>
 
+                        <div class='container-conect-other-contacts'>
                             <a href=''>Conectar outras listas de contato</a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="aside2"> <!--Assuntos para você-->
-                        <div> <!--Cabeçalho-->
-                            <h2>Assuntos para você</h2>
-                            <a>Alterar</a>
-                        </div>
-
-                        <div> <!--Conteúdo-->
-                            <div>
-                                <h4><a href="">#Teste1</a></h4>
-                            </div>
-
-                            <div>
-                                <h4><a href="">#Teste2</a></h4>
-                            </div>
-
-                            <div>
-                                <h4><a href="">#Teste3</a></h4>
-                            </div>
-
-                            <div>
-                                <h4><a href="">#Teste4</a></h4>
-                            </div>
-                        </div>
+                <div class="aside2">
+                    <!--Assuntos para você-->
+                    <div class="cabecalho">
+                        <!--Cabeçalho-->
+                        <h3>Assuntos para você</h3>
+                        <a>Alterar</a>
                     </div>
-                    <div class="footer"> <!--Footer-->
-                        <p>
-                            © 2018 Twitter
-                            <a href="">Sobre</a>
-                            <a href="">Central de Ajuda</a>
-                            <a href="">Termos</a>
-                            <a href="">Politica de Privacidade</a>
-                            <a href="">Cookies</a>
-                            <a href="">Informações de anúncios</a>  
-                        </p>
+
+                    <div class='container-hashtags'>
+                        <!--Conteúdo-->
+                        <div>
+                            <h4><a href="">#Teste1</a></h4>
+                            <p>10 mil Tweets</p>
+                        </div>
+
+                        <div>
+                            <h4><a href="">#Teste2</a></h4>
+                            <p>Este Tweet está pegando fogo no momento</p>
+                        </div>
+
+                        <div>
+                            <h4><a href="">#Teste3</a></h4>
+                            <p>10 mil Tweets</p>
+                        </div>
+
+                        <div>
+                            <h4><a href="">#Teste4</a></h4>
+                            <p>Este Tweet está pegando fogo no momento</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>
-    </body>
+                <footer>
+                    <div>
+                        <p>© 2018 Twitter</p>
+                        <a href="">Sobre</a>
+                        <a href="">Central de Ajuda</a>
+                        <a href="">Termos</a>
+                        <a href="">Politica de Privacidade</a>
+                        <a href="">Cookies</a>
+                        <a href="">Informações de anúncios</a>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+</body>
+
 </html>
