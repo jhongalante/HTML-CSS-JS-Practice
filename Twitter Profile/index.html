@@ -14,192 +14,9 @@
 
     <style>
         *{
-                padding: 0;
-                margin: 0;
-            }
-            .aside{
-                width: 300px;
-                margin-right: 20px;
-                position:absolute;
-                right: 0px;
-                display: inline-block;
-            }
-
-            .aside1{
-                margin-bottom: 7px;
-                background: #fff;
-            }
-
-            .aside2{
-                background: #fff;
-            }
-            .cabecalho{
-                display:flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                padding: 15px 0px 15px 15px;
-            }
-
-            .cabecalho > a{
-                margin-left: 10px;
-                margin-top: 5px;
-                font-size: 13px;
-                color:#E81C4F;
-                text-decoration: none;
-            }
-
-            .cabecalho > a:hover{
-                text-decoration: underline;
-            }
-
-            .perfil{
-                display:flex;
-                margin-bottom: 10px;
-                padding-bottom: 5px;
-                border-bottom: 1px solid rgba(0,0,0,.1);
-            }
-
-            .container-foto-perfil > img{
-                height: 50px;
-                width: 50px;
-                border-radius: 50%;
-            }
-
-            .container-foto-perfil{
-                margin-left: 10px;
-            }
-
-            .container-profile{
-                margin-left: 10px;
-                margin-top: 2px;
-                width:100%;
-                position: relative;
-            }
-
-            .userNameProfile{
-                display:flex;
-                width:100%;
-            }
-
-            .userNameProfile > p{
-                color: rgba(0,0,0,0.4);
-                margin-left: 5px;
-            }
-
-            .userNameProfile > .btn-dismiss-profile{
-                position:absolute;
-                right: 10px;
-                margin-bottom: 5px;
-                color: rgba(0,0,0,0.2);
-            }
-
-            .userNameProfile > .btn-dismiss-profile:hover{
-                cursor:pointer;
-            }
-            .btnSeguir{
-                border:1px solid #EC4972;
-                border-radius: 20px;
-                text-decoration: none;
-                color: #E81C4F;
-                padding: 8px 25px 5px 25px;
-                font-weight: 600;
-                font-size: 14px;
-            }
-
-            .container-btn-seguir{
-                margin-top: 10px;
-            }
-
-
-
-            .container-import-gmail{
-                display:flex;
-                flex-direction: column;
-                border-bottom: 1px solid rgba(0,0,0,.1);
-                padding-bottom: 10px;
-                margin: 15px;
-            }
-
-            .container-import-gmail > div{
-                margin-left: 10px;
-            }
-            
-            .container-import-gmail > div > small{
-                color: gray;
-            }
-
-            .container-import-gmail > img{
-                height: 25px;
-                width: 25px;
-                border:1px solid rgba(0,0,0,.2);
-                padding: 5px;
-                margin-left: 5px;
-            }
-
-            .container-conect-other-contacts{
-                padding-bottom: 15px;
-                margin: 15px;
-            }
-
-            .container-conect-other-contacts > a{
-                margin-left: 5px;
-                text-decoration: none;
-                color: #E81C4F;
-                font-size: 14px;
-            }
-
-            .container-conect-other-contacts > a:hover{
-                text-decoration: underline;
-            }
-
-            .aside2 > .cabecalho{
-                padding-bottom: 10px;
-            }
-
-            .container-hashtags{
-                display:flex;
-                flex-direction: column;
-                margin-left: 15px;
-                padding-bottom: 10px;
-            }
-
-            .container-hashtags div{
-                margin-bottom: 10px;
-            }
-
-            .container-hashtags div h4 a{
-                text-decoration: none;
-                color: #E81C4F;
-                font-size: 16px; 
-            }
-
-            .container-hashtags div p{
-                color: gray;
-                font-size: 13.5px;
-            }
-
-            .aside > footer{
-                margin: 20px 0px;
-            }
-            .aside > footer div{
-               margin-left: 15px;
-               font-size: 14px;
-            }
-            .aside > footer div p{
-                display:inline;
-                color: gray;
-                margin-right: 10px;
-            }
-            .aside > footer div a{
-                text-decoration: none;
-                color: gray;
-                margin-right: 15px;
-            }
-
-            .aside > footer div a:hover{
-                color: #E81C4F;
-                text-decoration: underline;
-            }
+            padding: 0;
+            margin: 0;
+        }
 
         </style>
 </head>
@@ -284,44 +101,50 @@
                     </div>
 
                     <div class="tweetBody">
-                        <div class="userInfo">
-                            <!--Informações do usuário do tweet-->
-                            <a href=#>
-                                <img src="Imagens/fotoPerfil.jpg">
-                                <!--Imagem de perfil do usuario 1-->
-                            </a>
+                        <!--Informações do usuário do tweet-->
+                        <div class="container-img-perfil">
+                            <img src="Imagens/fotoPerfil.jpg">
+                            <!--Imagem de perfil do usuario 1-->
+                        </div>
+
+                        <div class="container-tweet">
                             <div class="datauser">
                                 <p class="name">usuario1</p>
                                 <p class="username">@usuario1</p>
                                 <p class="dataTweet">19 de dez</p>
                             </div>
-                        </div>
-                        <div class="tweetContent">
-                            <!--Conteúdo do tweet-->
-                            <p class="tweetText">Tweet 1 Laram Ipsum</p>
-                            <div class="tweetLink">
-                                <img sr="">
-                                <!--Imagem do link do tweet-->
-                                <div>
-                                    <h4>Titulo do link tweetado</h4>
-                                    <p>Breve resumo do corpo do link do tweet</p>
-                                </div>
-                            </div>
-                        </div>
+                            <div class="tweetContent">
+                                <!--Conteúdo do tweet-->
+                                <p class="tweetText">
+                                    Um tweet para teste com link!
+                                </p>
 
-                        <div class="menuTweet">
-                            <ul class="listMenuTweet">
-                                <!--Menu de tweet-->
-                                <li>3</li>
-                                <!--Responder-->
-                                <li>4</li>
-                                <!--Retweets-->
-                                <li>34</li>
-                                <!--Likes-->
-                                <li></li>
-                                <!--DM-->
-                            </ul>
-                            <a href="">Mostrar esta sequência</a>
+                                <div class="tweetLink">
+                                    <img src="Imagens/fotoCapa.jpg">
+                                    <!--Imagem do link do tweet-->
+                                    <div class="description-link">
+                                        <h4>Titulo do link tweetado</h4>
+                                        <p>Breve resumo do corpo do link do tweet</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="menuTweet">
+                                    <ul class="listMenuTweet">
+                                        <!--Menu de tweet-->
+                                        <li><i class="far fa-comment"></i>3</li>
+                                        <!--Responder-->
+                                        <li><i class="fas fa-retweet"></i>4</li>
+                                        <!--Retweets-->
+                                        <li><i class="far fa-heart"></i>34</li>
+                                        <!--Likes-->
+                                        <li><i class="far fa-envelope"></i></li>
+                                        <!--DM-->
+                                    </ul>
+                                    <a href="">Mostrar esta sequência</a>
+                                </div>
+
                         </div>
                     </div>
                 </div>
