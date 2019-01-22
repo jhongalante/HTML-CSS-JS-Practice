@@ -17,10 +17,8 @@ small:hover {
     cursor: pointer;
 }
 
-.card>small,
-.card>p {
+.username>small {
     color: #71848D;
-    line-height: 30px;
 }
 
 .card>div>p>i {
@@ -29,6 +27,15 @@ small:hover {
 
 .card>div {
     margin-top: 10px;
+}
+
+.card div:nth-child(2){
+    color: gray;
+    margin: 20px 0px;
+}
+
+.card div:nth-child(2) p{
+    margin-bottom: 10px;
 }
 
 .usergallery>img {
@@ -83,9 +90,16 @@ small:hover {
 .listaMenuMain>li>a:hover {
     text-decoration: underline;
 }
+
+.tweet{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tweet:hover{
+    background: rgba(173, 216, 230, .1);
+}
 .contextTweet {
     margin-left: 40px;
-    margin-top: 5px;
     margin-bottom: 5px;
     color: #71848D;
 }
@@ -130,13 +144,16 @@ small:hover {
 .datauser>.username {
     margin-right: 12px;
 }
-.tweetContent{
-}
 
 .tweetLink{
     margin-top: 10px;
     border-radius: 10px;
     border:1px solid rgba(0,0,0,.2);
+}
+
+.tweetLink:hover{
+    cursor:pointer;
+    border:1px solid rgba(0,0,0,.4);
 }
 
 .tweetLink > img{   
@@ -147,20 +164,48 @@ small:hover {
     border-bottom: 1px solid rgba(0,0,0,.2);
 }
 
+.description-link{
+    padding: 10px 15px;
+}
+
+.description-link > a{
+    color: gray;
+    text-decoration: none;
+}
+
+.description-link h4,
+.description-link p{
+    margin-bottom: 5px;
+}
+
 .listMenuTweet{
     display:flex;
     list-style: none;
-    justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .listMenuTweet li{
     display:flex;
     justify-content: center;
+    margin-right: 30px;
 }
 
 .listMenuTweet li i{
     margin-right: 10px;
+}
+
+.menuTweet{
+    margin-bottom: 10px;
+}
+
+.menuTweet a{
+    color: #E81C4F;
+    text-decoration: none;
+}
+
+.menuTweet a:hover{
+    text-decoration: underline;
 }
 
 
