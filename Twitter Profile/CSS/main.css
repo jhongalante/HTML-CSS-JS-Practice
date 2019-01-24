@@ -136,6 +136,9 @@ small:hover {
     color: #71848D;
     margin-bottom: 5px;
 }
+.datauser:hover, .container-img-perfil:hover{
+    
+}
 .datauser>.name {
     font-weight: 800;
     color: black;
@@ -206,6 +209,21 @@ small:hover {
 
 .menuTweet a:hover{
     text-decoration: underline;
+}
+
+.comments:hover{
+    color:lightseagreen;
+    cursor: pointer;
+}
+
+.retweets:hover{
+    color:green;
+    cursor:pointer;
+}
+
+.likes:hover{
+    color:#E81C4F;
+    cursor:pointer;
 }
 
 
