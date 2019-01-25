@@ -8,7 +8,7 @@ section {
 /*Card*/
 .card {
     padding-top: 15px;
-    margin-left: 20px;
+    margin-right: 40px;
 }
 
 .username>h1:hover,
@@ -65,7 +65,7 @@ small:hover {
 .main {
     background: #fff;
     width: 600px;
-    margin-left: 10px;
+    margin-right: 15px;
 }
 
 .menuMain {
@@ -101,6 +101,7 @@ small:hover {
 .contextTweet {
     margin-left: 40px;
     margin-bottom: 5px;
+    margin-top: 5px;
     color: #71848D;
 }
 
@@ -136,22 +137,37 @@ small:hover {
     color: #71848D;
     margin-bottom: 5px;
 }
-.datauser:hover, .container-img-perfil:hover{
-    
-}
 .datauser>.name {
     font-weight: 800;
     color: black;
     margin-right: 5px;
 }
+.datauser>.name:hover{
+    text-decoration: underline;
+    color:#E81C4F;
+}
 .datauser>.username {
     margin-right: 12px;
+}
+.datauser > .name:hover, .datauser>.username:hover, .container-img-perfil:hover{
+    cursor:pointer;
+}
+.datauser > .dataTweet:hover{
+    text-decoration: underline;
+    color:#E81C4F;
+    cursor:pointer;
+}
+
+.datauser > .username,
+.datauser > .dataTweet{
+    font-size: 15px;
 }
 
 .tweetLink{
     margin-top: 10px;
     border-radius: 10px;
     border:1px solid rgba(0,0,0,.2);
+    width: 98%;
 }
 
 .tweetLink:hover{
@@ -161,7 +177,9 @@ small:hover {
 
 .tweetLink > img{   
     height: 300px;
-    width: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: 1px solid rgba(0,0,0,.2);
@@ -265,14 +283,16 @@ small:hover {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
+.container-foto-perfil {
+    margin-left: 10px;
+}
+.container-foto-perfil:hover{
+    cursor:pointer;
+}
 .container-foto-perfil>img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-}
-
-.container-foto-perfil {
-    margin-left: 10px;
 }
 
 .container-profile {
@@ -286,10 +306,17 @@ small:hover {
     display: flex;
     width: 100%;
 }
-
+.userNameProfile:hover{
+    cursor:pointer;
+}
 .userNameProfile>p {
     color: rgba(0, 0, 0, 0.4);
     margin-left: 5px;
+}
+
+.userNameProfile:hover>h4{
+    text-decoration: underline;
+    color:rgba(232, 28, 79, 1);
 }
 
 .userNameProfile>.btn-dismiss-profile {
@@ -312,6 +339,10 @@ small:hover {
     font-weight: 600;
     font-size: 14px;
 }
+.btnSeguir:hover{
+    cursor:pointer;
+    background:rgba(232, 28, 79, 0.1);
+}
 .container-btn-seguir {
     margin-top: 10px;
 }
@@ -322,13 +353,17 @@ small:hover {
     padding-bottom: 10px;
     margin: 15px;
 }
+.container-import-gmail:hover{
+    cursor:pointer;
+}
 
 .container-import-gmail>div {
     margin-left: 10px;
 }
 
-.container-import-gmail>div>small {
+.container-import-gmail>div>p {
     color: gray;
+    font-size: 13px;
 }
 
 .container-import-gmail>img {
@@ -359,6 +394,10 @@ small:hover {
     padding-bottom: 10px;
 }
 
+.aside2>.cabecalho>a{
+    cursor:pointer;
+}
+
 .container-hashtags {
     display: flex;
     flex-direction: column;
@@ -368,6 +407,14 @@ small:hover {
 
 .container-hashtags div {
     margin-bottom: 10px;
+}
+
+.container-hashtags:hover{
+    cursor:pointer;
+}
+
+.container-hashtags div:hover>h4{
+    text-decoration: underline;
 }
 
 .container-hashtags div h4 a {
