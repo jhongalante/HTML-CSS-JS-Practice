@@ -1,14 +1,16 @@
 section {
     background: #E6ECF0;
     padding: 10px 80px;
-    display: flex;
-    justify-content: space-around;
+    position: relative;
 }
+
 
 /*Card*/
 .card {
     padding-top: 15px;
-    margin-right: 40px;
+    position: absolute;
+    left: 90px;
+    width: 250px;
 }
 
 .username>h1:hover,
@@ -65,7 +67,9 @@ small:hover {
 .main {
     background: #fff;
     width: 600px;
-    margin-right: 15px;
+    position: relative;
+    top: 0px;
+    left: 300px;
 }
 
 .menuMain {
@@ -75,7 +79,6 @@ small:hover {
 .listaMenuMain {
     list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     width: 65%;
     padding: 10px 0px 10px 0px;
@@ -248,6 +251,9 @@ small:hover {
 /*Aside*/
 .aside {
     width: 300px;
+    position:absolute;
+    right: 60px;
+    top: 10px;
 }
 .aside1 {
     margin-bottom: 7px;

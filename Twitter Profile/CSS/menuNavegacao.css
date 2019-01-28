@@ -18,13 +18,14 @@ nav{
     margin-left: 50px;
     color:#1DA1F2;
     cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menuNavegacao{
     display:flex;
-    flex-direction: row;
     list-style: none;
-    margin-left: 0px;
 }
 
 .itensMenu{
@@ -32,6 +33,9 @@ nav{
     color: #66757F;
     font-weight: 600;
     padding:16px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .itensMenu:hover{

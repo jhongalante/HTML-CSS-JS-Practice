@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1125px){
+    .aside{
+        left: 85px;
+        top: 280px;
+    }
+    .main{
+        left: 320px;
+    }
+
+}
+
+@media only screen and (max-width: 968px){
+    .itensMenu > p{
+        display:none;
+    }
+}
