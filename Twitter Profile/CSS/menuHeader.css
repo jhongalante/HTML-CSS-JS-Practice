@@ -1,7 +1,6 @@
 header{
     position:relative;
-    border:1px solid black;
-    width: 100%;
+    max-width: 2540px;
     box-sizing: border-box;
 }
 
