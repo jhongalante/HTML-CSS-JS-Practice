@@ -41,6 +41,24 @@ header{
     padding-top: 13px;
 }
 
+#btn-mais{
+    display:none;
+}
+#btn-mais > span{
+    color: #E81C4F;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -2px;
+    color:#657786;
+    display:block;
+}
+#btn-mais .visibility-hidden{
+    visibility: hidden;
+}
+#btn-mais:hover span{
+    cursor:pointer;
+    color: #E81C4F;
+}
 .itemMenuHeader:hover > a > .contador{
     border-bottom: 2px solid #E81C4F;
     transition: all .15s ease-in-out;
@@ -55,6 +73,26 @@ header{
 .itemMenuHeader > a > span{
     display:block;
     text-align: center;
+}
+
+#modal-mais{
+    background-color: #fff;
+    position:absolute;
+    margin-top: 10px; 
+    z-index: 900; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    display:none;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+#modal-mais > div > p{
+    padding: 10px 20px;
+}
+#modal-mais div:hover{
+    background:#E81C4F;
+    color: #fff;
+    cursor:pointer;
 }
 
 .fotoPerfil{

@@ -9,8 +9,26 @@
 
 }
 
-@media only screen and (max-width: 968px){
+@media only screen and (max-width: 992px){
     .itensMenu > p{
         display:none;
+    }
+    body{
+        width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1016px){
+    .btn-hidden{
+        display:none;
+    }
+    #btn-mais{
+        display:block;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    nav{
+        width: 620px;
     }
 }

@@ -4,6 +4,9 @@ section {
     position: relative;
 }
 
+body{
+    width: 100%;
+}
 
 /*Card*/
 .card {
