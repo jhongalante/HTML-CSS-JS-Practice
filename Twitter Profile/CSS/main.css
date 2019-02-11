@@ -2,6 +2,7 @@ section {
     background: #E6ECF0;
     padding: 10px 80px;
     position: relative;
+    border:1px solid black; 
 }
 
 
@@ -67,7 +68,7 @@ small:hover {
 .main {
     background: #fff;
     width: 600px;
-    position: relative;
+    position: absolute;
     top: 0px;
     left: 300px;
 }

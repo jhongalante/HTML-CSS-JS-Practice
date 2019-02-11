@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: lightblue;
+}
+#board{
+    display:flex;
+    justify-content: center;
+    width: 80vw;
+    flex-wrap: wrap;
+}
+.card{
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+}
