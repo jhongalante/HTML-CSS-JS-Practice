@@ -5,6 +5,9 @@ section {
     border:1px solid black; 
 }
 
+body{
+    width: 100%;
+}
 
 /*Card*/
 .card {

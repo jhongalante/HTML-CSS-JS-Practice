@@ -1,24 +1,24 @@
 document.getElementById('footerbtn').addEventListener('mouseover', function () {
     document.getElementById('minimodal').style.display = 'flex';
     document.getElementById('minimodal').style.transform = ''
-    document.getElementById('btnFooter').style.display = 'none';
+    document.getElementById('btn-footer').style.display = 'none';
 });
 
 document.getElementById('footerbtn').addEventListener('mouseout', function () {
     document.getElementById('minimodal').style.display = 'none';
-    document.getElementById('btnFooter').style.display = 'block';
+    document.getElementById('btn-footer').style.display = 'block';
 });
 
 
-var btnUpload = document.getElementById('btnUpload');
-var btnGaleria = document.getElementById('btnGaleria');
-var btnFotosComVoce = document.getElementById('btnFotosComVoce');
+var btnUpload = document.getElementById('btn-upload');
+var btnGaleria = document.getElementById('btn-galeria');
+var btnFotosComVoce = document.getElementById('btn-fotos-com-voce');
 
 btnUpload.addEventListener('click', function () {
-    document.getElementById('tabBody1').style.display = 'flex';
-    document.getElementById('tabBody2').style.display = 'none';
-    document.getElementById('tabBody3').style.display = 'none';
-    document.getElementById('tabBody2-1').style.display = 'none';
+    document.getElementById('tab-body1').style.display = 'flex';
+    document.getElementById('tab-body2').style.display = 'none';
+    document.getElementById('tab-body3').style.display = 'none';
+    document.getElementById('tab-body2-1').style.display = 'none';
     this.style.fontWeight = "bold";
     this.style.borderBottom = "2px solid blue";
     this.style.outline = 'none';
@@ -29,10 +29,10 @@ btnUpload.addEventListener('click', function () {
 });
 
 btnGaleria.addEventListener('click', function () {
-    document.getElementById('tabBody2').style.display = 'flex';
-    document.getElementById('tabBody1').style.display = 'none';
-    document.getElementById('tabBody3').style.display = 'none';
-    document.getElementById('tabBody2-1').style.display = 'none';
+    document.getElementById('tab-body2').style.display = 'flex';
+    document.getElementById('tab-body1').style.display = 'none';
+    document.getElementById('tab-body3').style.display = 'none';
+    document.getElementById('tab-body2-1').style.display = 'none';
     this.style.fontWeight = "bold";
     this.style.borderBottom = "2px solid blue";
     this.style.outline = 'none';
@@ -43,10 +43,10 @@ btnGaleria.addEventListener('click', function () {
 });
 
 btnFotosComVoce.addEventListener('click', function () {
-    document.getElementById('tabBody3').style.display = 'flex';
-    document.getElementById('tabBody1').style.display = 'none';
-    document.getElementById('tabBody2').style.display = 'none';
-    document.getElementById('tabBody2-1').style.display = 'none';
+    document.getElementById('tab-body3').style.display = 'flex';
+    document.getElementById('tab-body1').style.display = 'none';
+    document.getElementById('tab-body2').style.display = 'none';
+    document.getElementById('tab-body2-1').style.display = 'none';
     this.style.fontWeight = "bold";
     this.style.borderBottom = "2px solid blue";
     this.style.outline = 'none';
@@ -56,42 +56,42 @@ btnFotosComVoce.addEventListener('click', function () {
     btnUpload.style.borderBottom = 'none';
 });
 
-var pastaFoto1 = document.getElementById('pastaFoto1');
+var pastaFoto1 = document.getElementById('pasta-foto1');
 
 pastaFoto1.addEventListener('click', function () {
-    document.getElementById('tabBody2').style.display = 'none';
-    document.getElementById('tabBody2-1').style.display = 'flex';
+    document.getElementById('tab-body2').style.display = 'none';
+    document.getElementById('tab-body2-1').style.display = 'flex';
 });
 
-var voltar = document.getElementById('navegacaoVoltar');
+var voltar = document.getElementById('navegacao-voltar');
 
 voltar.addEventListener('click', function () {
-    document.getElementById('tabBody2').style.display = 'flex';
-    document.getElementById('tabBody2-1').style.display = 'none';
+    document.getElementById('tab-body2').style.display = 'flex';
+    document.getElementById('tab-body2-1').style.display= 'none';
 });
 
-document.getElementById('btnFecharModal').addEventListener('click', function () {
-    document.getElementById('modalSelectPhoto').style.display = 'none';
+document.getElementById('btn-fechar-modal').addEventListener('click', function () {
+    document.getElementById('modal-select-photo').style.display = 'none';
 });
 
-document.getElementById('btnGravarVoz').addEventListener('click', function () {
-    document.getElementById('paginaDeVoz').style.display = 'flex';
+document.getElementById('btn-gravar-voz').addEventListener('click', function () {
+    document.getElementById('pagina-de-voz').style.display = 'flex';
 });
 
-document.getElementById('btnFecharPaginaVoz').addEventListener('click', function () {
-    document.getElementById('paginaDeVoz').style.display = 'none';
+document.getElementById('btn-fechar-pagina-voz').addEventListener('click', function () {
+    document.getElementById('pagina-de-voz').style.display = 'none';
 });
 
-var addAtalho = document.getElementById('addAtalho');
+var addAtalho = document.getElementById('add-atalho');
 addAtalho.addEventListener('click', function () {
-    document.getElementById('modalAddAtalho').style.display = 'block';
+    document.getElementById('modal-add-atalho').style.display = 'block';
 });
 
 function fecharModal() {
-    document.getElementById('modalAddAtalho').style.display = 'none';
+    document.getElementById('modal-add-atalho').style.display = 'none';
 }
 function checkCampoUrl(url) {
-    var btnConcluido = document.getElementById('btnConcluido');
+    var btnConcluido = document.getElementById('btn-concluido');
     if (url !== '') {
         btnConcluido.style.backgroundColor = 'blue';
         btnConcluido.style.color = '#fff';
@@ -101,24 +101,24 @@ function checkCampoUrl(url) {
     }
 }
 
-var btnPersonalizar = document.getElementById('btnPersonalizar');
+var btnPersonalizar = document.getElementById('btn-personalizar');
 btnPersonalizar.addEventListener('click', function () {
-    document.getElementById('modalPersonalizarPagina').style.display = "block";
+    document.getElementById('modal-personalizar-pagina').style.display = "block";
 })
 
 document.addEventListener('click', function (e) {
-    var modal = document.getElementById('modalBtnMenu');
-    var modal2 = document.getElementById('modalNotificacoes');
-    var modal3 = document.getElementById('modalUsuario');
-    var modal4 = document.getElementById('modalPersonalizarPagina');
+    var modal = document.getElementById('modal-btn-menu');
+    var modal2 = document.getElementById('modal-notificacoes');
+    var modal3 = document.getElementById('modal-usuario');
+    var modal4 = document.getElementById('modal-personalizar-pagina');
 
-    if (e.target.id == 'btnMenu' || e.target.id == 'listaMenuApps') {
+    if (e.target.id == 'btn-menu' || e.target.id == 'lista-menu-apps') {
         modal.style.display = 'block';
     } else {
         modal.style.display = 'none';
     }
 
-    if (e.target.id == 'btnSino' || e.target.id == 'imgSino' ||
+    if (e.target.id == 'btn-sino' || e.target.id == 'img-sino' ||
         e.target.className == 'cabecalho' || e.target.className == 'corpo' ||
         e.target.className == 'footerbtn' || e.target.id == 'minimodal') {
         modal2.style.display = 'block';
@@ -126,24 +126,24 @@ document.addEventListener('click', function (e) {
         modal2.style.display = 'none';
     }
 
-    if (e.target.id == 'btnPerfil' || e.target.id == 'corpoModal' ||
-        e.target.id == 'userData' || e.target.id == 'footerModal') {
+    if (e.target.id == 'btn-perfil' || e.target.id == 'corpo-modal' ||
+        e.target.id == 'user-data' || e.target.id == 'footer-modal') {
         modal3.style.display = 'block';
     } else {
         modal3.style.display = 'none';
     }
 
-    if (e.target.id == "btnPersonalizar" || e.target.id == "restaurarPadrao" || e.target.id == "iconePersonalizar") {
+    if (e.target.id == "btn-personalizar" || e.target.id == "restaurar-padrao" || e.target.id == "icone-personalizar") {
         modal4.style.display = 'block';
     } else {
         modal4.style.display = 'none';
     }
 });
 
-document.getElementById('btnAlterarFoto').addEventListener('click', function () {
-    document.getElementById('modalSelectPhoto').style.display = 'block';
+document.getElementById('btn-alterar-foto').addEventListener('click', function () {
+    document.getElementById('modal-select-photo').style.display = 'block';
 });
 
-document.getElementById('btnDeslogar').addEventListener('click', function () {
-    document.getElementById('btnPerfil').style.display = 'none';
+document.getElementById('btn-deslogar').addEventListener('click', function () {
+    document.getElementById('btn-perfil').style.display = 'none';
 });

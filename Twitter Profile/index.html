@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="CSS/menuHeader.css">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/responsive-main.css">
-
     <style>
         *{
             padding: 0;
@@ -26,10 +25,18 @@
 <body>
     <nav>
         <ul class="menuNavegacao">
-            <li><a href="" class="itensMenu"><i class="fas fa-home iconeMenu"></i><p>Página Inicial</p></a></li>
-            <li><a href="" class="itensMenu"><i class="fas fa-bolt iconeMenu"></i><p>Moments</p></a></li>
-            <li><a href="" class="itensMenu"><i class="fas fa-bell iconeMenu"></i><p>Notificações</p></a></li>
-            <li><a href="" class="itensMenu"><i class="fas fa-envelope iconeMenu"></i><p>Mensangens</p></a></li>
+            <li><a href="" class="itensMenu"><i class="fas fa-home iconeMenu"></i>
+                    <p>Página Inicial</p>
+                </a></li>
+            <li><a href="" class="itensMenu"><i class="fas fa-bolt iconeMenu"></i>
+                    <p>Moments</p>
+                </a></li>
+            <li><a href="" class="itensMenu"><i class="fas fa-bell iconeMenu"></i>
+                    <p>Notificações</p>
+                </a></li>
+            <li><a href="" class="itensMenu"><i class="fas fa-envelope iconeMenu"></i>
+                    <p>Mensangens</p>
+                </a></li>
             <i class="fab fa-twitter iconTwitter"></i>
         </ul>
 
@@ -59,12 +66,25 @@
                 <div class="menuHeader">
                     <ul class="listaMenu">
                         <li class="itemMenuHeader"><a href=""><span>Tweets</span><span class="contador">171</span></a></li>
-                        <li class="itemMenuHeader"><a href=""><span>Seguindo</span><span class="contador">360</span>
-                        </li>
+                        <li class="itemMenuHeader"><a href=""><span>Seguindo</span><span class="contador">360</span></li>
                         <li class="itemMenuHeader"><a href=""><span>Seguidores</span><span class="contador">17</span></li>
                         <li class="itemMenuHeader"><a href=""><span>Curtidas</span><span class="contador">314</span></li>
-                        <li class="itemMenuHeader"><a href=""><span>Listas</span><span class="contador">0</span></li>
-                        <li class="itemMenuHeader"><a href=""><span>Moments</span><span class="contador">0</span></a></li>
+                        <li class="itemMenuHeader btn-hidden"><a href=""><span>Listas</span><span class="contador">0</span></li>
+                        <li class="itemMenuHeader btn-hidden"><a href=""><span>Moments</span><span class="contador">0</span></a></li>
+                        <li class="itemMenuHeader" id="btn-mais">
+                                <span class="visibility-hidden">Mais</span>
+                                <span>
+                                    Mais
+                                    <span class="seta">
+                                        <i class="fas fa-sort-down"></i>
+                                    </span>
+                                </span>
+                            <div id="modal-mais">
+                                <div><p>Listas</p></div>
+                                <div><p>Moments</p></div>
+                            </div>
+                            <script src="index.js"></script>
+                        </li>
                     </ul>
                     <a href="" class="btnEditarPerfil">Editar Perfil</a>
                 </div>
