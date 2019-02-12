@@ -7,14 +7,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
   background: lightblue;
+}
+
+#score {
+  font-size: 60px;
+  font-weight: 900;
 }
 
 #board {
@@ -30,8 +38,14 @@ body {
 }
 
 .card {
-  height: 170px;
-  width: 170px;
+  height: 150px;
+  width: 150px;
   margin: 10px;
+}
+
+#card-3 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 /*# sourceMappingURL=style.css.map */
