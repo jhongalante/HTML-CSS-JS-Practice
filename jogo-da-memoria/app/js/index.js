@@ -6,7 +6,7 @@ var score = 0;
 document.getElementById('score').innerHTML = score;
 
 
-Array.from(cards).forEach(card => {
+Array.from(cards).forEach(function(card){
     card.addEventListener('click', function (e) {
         flipCardEffect(card);
         verificarCarta(e);
@@ -35,7 +35,7 @@ function verificarCarta(e) {
                             score = 0;
                             embaralharCartas();
                             document.getElementById('score').innerHTML = score;
-                            Array.from(cards).forEach(card => {
+                            Array.from(cards).forEach(function(card){
                                 flipCardEffect(card);
                             })
                         }, 1000);
@@ -58,7 +58,7 @@ function verificarCarta(e) {
 
 
 function embaralharCartas() {
-    Array.from(cards).forEach(card => {
+    Array.from(cards).forEach(function(card){
         card.style.order = (Math.round((Math.random() * 14) + 1));
     });
 }
